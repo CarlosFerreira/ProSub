@@ -73,7 +73,7 @@
     -->
     
         	<target name="-post-jar" description="New task definition for EclipseLink static weaving"> 
-		<taskdef name="weave" classname="org.eclipse.persistence.tools.weaving.jpa.StaticWeaveAntTask"> 
+		<taskdef name="weave" classname="org.eclipse.persistence.tools.weaving.jpa.StaticWeaveAntTask"/> 
 	</target> 
 	<target name="weaving" description="perform weaving" depends="-post-jar"> 
 		<weave  source="${dist.jar}\ProSub.jar" 
