@@ -1,0 +1,13 @@
+language: java
+jdk:
+  - oraclejdk7
+  - openjdk7
+
+before_script:
+  - mysql -e 'create database prosub;'
+
+before_install:
+ - sudo apt-get update
+ - sudo apt-get install libeclipselink-java
+ - sudo apt-get install glassfish-*
+ - sudo apt-get install netbeans
