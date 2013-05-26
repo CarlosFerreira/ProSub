@@ -9,3 +9,4 @@ before_script:
 before_install:
  - sudo apt-get update
  - sudo apt-get install libeclipselink-java
+ - sudo apt-get install javax
